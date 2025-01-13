@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_footer_organizations",
+  "info": {
+    "displayName": "organization",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "address_line_1": {
+      "type": "string",
+      "required": true,
+      "default": "47 St Regis Crescent, Toronto, "
+    },
+    "address_line_2": {
+      "type": "string",
+      "required": true,
+      "default": "ON M3J 1Y6"
+    }
+  }
+}

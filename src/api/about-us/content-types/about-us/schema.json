@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_uses",
+  "info": {
+    "singularName": "about-us",
+    "pluralName": "about-uses",
+    "displayName": "About US",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.hero"
+    },
+    "legacy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.legacy"
+    },
+    "creativity": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.creativity"
+    },
+    "precision": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.precision"
+    },
+    "passion": {
+      "type": "component",
+      "repeatable": false,
+      "component": "about.passion"
+    },
+    "headline": {
+      "type": "string",
+      "required": true,
+      "default": "Every Detail, Every Masterpiece"
+    },
+    "checklist": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable.dual-tone-text"
+    }
+  }
+}

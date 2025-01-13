@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_heroes",
+  "info": {
+    "displayName": "hero"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "text",
+      "required": true,
+      "default": "At Petra Design, our journey began with a simple yet profound vision: to transform architectural spaces through exceptional design and unparalleled craftsmanship."
+    }
+  }
+}
