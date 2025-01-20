@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_material_features",
+  "info": {
+    "displayName": "Feature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "text"
+    },
+    "richtext": {
+      "type": "blocks"
+    },
+    "resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource.resource"
+    }
+  }
+}

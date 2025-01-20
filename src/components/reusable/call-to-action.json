@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_reusable_call_to_actions",
+  "info": {
+    "displayName": "Call To Action",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "text"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

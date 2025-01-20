@@ -4,7 +4,7 @@
   "info": {
     "singularName": "about-us",
     "pluralName": "about-uses",
-    "displayName": "About US",
+    "displayName": "About US Page",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "hero": {
+    "landingSection": {
       "type": "component",
       "repeatable": false,
       "component": "about.hero"
@@ -46,6 +46,11 @@
       "type": "component",
       "repeatable": true,
       "component": "reusable.dual-tone-text"
+    },
+    "meta_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.meta-fields"
     }
   }
 }

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_product_images",
+  "info": {
+    "displayName": "Images",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "featuredImages": {
+      "displayName": "Featured Images",
+      "type": "component",
+      "repeatable": false,
+      "component": "product.featured-images"
+    },
+    "otherImages": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

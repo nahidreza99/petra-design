@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_categories",
+  "info": {
+    "singularName": "product-category",
+    "pluralName": "product-categories",
+    "displayName": "Product Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "product_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-type.product-type",
+      "mappedBy": "product_category"
+    },
+    "callToAction": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.call-to-action"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "landingSection": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable.hero"
+    },
+    "meta_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.meta-fields"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "description": {
+      "type": "text"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "inversedBy": "product_categories"
+    },
+    "thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

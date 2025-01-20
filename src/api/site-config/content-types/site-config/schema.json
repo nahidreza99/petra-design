@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_configs",
+  "info": {
+    "singularName": "site-config",
+    "pluralName": "site-configs",
+    "displayName": "Site Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logo_variant_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo_variant_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sales_email": {
+      "type": "email"
+    },
+    "marketing_email": {
+      "type": "email"
+    },
+    "address_line_1": {
+      "type": "string"
+    },
+    "address_line_2": {
+      "type": "string"
+    },
+    "learnMoreUrl": {
+      "type": "string"
+    },
+    "locationEmbeddedUrl": {
+      "type": "string"
+    },
+    "globalMetaData": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.meta-fields"
+    }
+  }
+}

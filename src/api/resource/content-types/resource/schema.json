@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resources",
+  "info": {
+    "singularName": "resource",
+    "pluralName": "resources",
+    "displayName": "Resource",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "resourceType": {
+      "type": "enumeration",
+      "enum": [
+        "Brochure",
+        "SketchUP",
+        "CAD"
+      ]
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "product_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-type.product-type",
+      "inversedBy": "resources"
+    },
+    "meta_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.meta-fields"
+    }
+  }
+}

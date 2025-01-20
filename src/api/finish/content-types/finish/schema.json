@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finishes",
+  "info": {
+    "singularName": "finish",
+    "pluralName": "finishes",
+    "displayName": "Finishes List",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "short": {
+      "type": "string",
+      "regex": "^[A-Z]"
+    }
+  }
+}

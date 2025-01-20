@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_reusable_quick_links",
+  "info": {
+    "displayName": "Quick Links",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable.link"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_material_texture_sections",
+  "info": {
+    "displayName": "Texture Section"
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "text"
+    },
+    "variant": {
+      "displayName": "Variants",
+      "type": "component",
+      "repeatable": true,
+      "component": "material.variants"
+    }
+  }
+}

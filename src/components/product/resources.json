@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_product_resources",
+  "info": {
+    "displayName": "CAD + Models",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "disclaimer": {
+      "type": "blocks"
+    }
+  }
+}

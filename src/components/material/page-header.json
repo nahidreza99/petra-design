@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_material_page_headers",
+  "info": {
+    "displayName": "Page Header"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "richtext": {
+      "type": "blocks"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

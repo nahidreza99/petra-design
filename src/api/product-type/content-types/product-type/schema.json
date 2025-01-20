@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_types",
+  "info": {
+    "singularName": "product-type",
+    "pluralName": "product-types",
+    "displayName": "Product Type",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "callToAction": {
+      "displayName": "Call To Action",
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.call-to-action"
+    },
+    "product_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::product-category.product-category",
+      "inversedBy": "product_types"
+    },
+    "resources": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resource.resource",
+      "mappedBy": "product_type"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "product_type"
+    },
+    "landingSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.hero"
+    },
+    "meta_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "reusable.meta-fields"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

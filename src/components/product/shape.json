@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_product_shapes",
+  "info": {
+    "displayName": "Shape",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "thumbnails": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "richtext": {
+      "type": "blocks"
+    },
+    "sizes": {
+      "displayName": "Dimension With Size",
+      "type": "component",
+      "repeatable": true,
+      "component": "product.dimension-with-size"
+    },
+    "moreInformation": {
+      "type": "text"
+    },
+    "shownColorsMayVary": {
+      "type": "text"
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable.color"
+    }
+  }
+}
