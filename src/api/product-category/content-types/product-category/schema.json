@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product-category",
     "pluralName": "product-categories",
-    "displayName": "Product Category",
+    "displayName": "01. Product Category",
     "description": ""
   },
   "options": {
@@ -21,11 +21,6 @@
       "relation": "oneToMany",
       "target": "api::product-type.product-type",
       "mappedBy": "product_category"
-    },
-    "callToAction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "reusable.call-to-action"
     },
     "images": {
       "type": "media",
@@ -51,7 +46,7 @@
       "type": "uid",
       "targetField": "title"
     },
-    "description": {
+    "imageDescription": {
       "type": "text"
     },
     "projects": {
@@ -61,14 +56,18 @@
       "inversedBy": "product_categories"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "blurbText": {
+      "type": "text"
     }
   }
 }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "gallery",
     "pluralName": "galleries",
-    "displayName": "Gallery Page",
+    "displayName": "02. Gallery Page",
     "description": ""
   },
   "options": {
@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "callToAction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "reusable.call-to-action"
-    },
     "projects": {
       "type": "relation",
       "relation": "oneToMany",
@@ -31,6 +26,9 @@
       "type": "component",
       "repeatable": false,
       "component": "reusable.hero"
+    },
+    "blurbText": {
+      "type": "text"
     }
   }
 }

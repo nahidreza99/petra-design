@@ -4,7 +4,7 @@
   "info": {
     "singularName": "material",
     "pluralName": "materials",
-    "displayName": "Material",
+    "displayName": "06. Material",
     "description": ""
   },
   "options": {
@@ -23,12 +23,6 @@
       "type": "component",
       "repeatable": false,
       "component": "material.feature"
-    },
-    "projects": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::project.project",
-      "mappedBy": "materials"
     },
     "textures": {
       "type": "relation",
@@ -52,6 +46,12 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "materials"
     }
   }
 }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "Project",
+    "displayName": "05. Project",
     "description": ""
   },
   "options": {
@@ -23,22 +23,6 @@
       "relation": "manyToMany",
       "target": "api::product-category.product-category",
       "mappedBy": "projects"
-    },
-    "materials": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::material.material",
-      "inversedBy": "projects"
-    },
-    "projectType": {
-      "type": "enumeration",
-      "enum": [
-        "Residential",
-        "Commercial",
-        "Institutional",
-        "Religious",
-        "Others"
-      ]
     },
     "location": {
       "type": "string"
@@ -65,12 +49,6 @@
       "repeatable": false,
       "component": "reusable.meta-fields"
     },
-    "products": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::product.product",
-      "inversedBy": "projects"
-    },
     "thumbnail": {
       "type": "media",
       "multiple": false,
@@ -85,6 +63,28 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "product_types": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product-type.product-type",
+      "inversedBy": "projects"
+    },
+    "materials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::material.material",
+      "inversedBy": "projects"
+    },
+    "projectType": {
+      "type": "enumeration",
+      "enum": [
+        "Residential",
+        "Commercial",
+        "Institutional",
+        "Religious",
+        "Others"
+      ]
     }
   }
 }

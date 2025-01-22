@@ -56,6 +56,21 @@
       "type": "component",
       "repeatable": false,
       "component": "reusable.meta-fields"
+    },
+    "socials": {
+      "displayName": "Social",
+      "type": "component",
+      "repeatable": true,
+      "component": "reusable.social"
+    },
+    "productCheckoutDetails": {
+      "displayName": "Product Checkout Details",
+      "type": "component",
+      "repeatable": false,
+      "component": "product.product-checkout-details"
+    },
+    "subscriptionLink": {
+      "type": "string"
     }
   }
 }

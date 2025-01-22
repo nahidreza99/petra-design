@@ -13,7 +13,6 @@ export default factories.createCoreController('api::gallery.gallery', ({strapi})
       landingSection: {
         populate: 'media',
       },
-      callToAction: true,
       meta_data: {
         populate: 'og_media',
       },

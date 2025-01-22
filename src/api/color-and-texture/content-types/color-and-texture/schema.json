@@ -4,7 +4,7 @@
   "info": {
     "singularName": "color-and-texture",
     "pluralName": "color-and-textures",
-    "displayName": "Color & Texture Page",
+    "displayName": "03. Color & Texture Page",
     "description": ""
   },
   "options": {
@@ -17,11 +17,6 @@
       "repeatable": false,
       "component": "reusable.hero"
     },
-    "callToAction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "reusable.call-to-action"
-    },
     "submissionResponse": {
       "type": "blocks"
     },
@@ -29,6 +24,9 @@
       "type": "component",
       "repeatable": true,
       "component": "reusable.meta-fields"
+    },
+    "blurbText": {
+      "type": "text"
     }
   }
 }

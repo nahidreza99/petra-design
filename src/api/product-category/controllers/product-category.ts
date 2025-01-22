@@ -10,8 +10,9 @@ export default factories.createCoreController('api::product-category.product-cat
 
     // Customize the query to populate nested relationships
     query.populate = {
-      landingSection: true,
-      callToAction: true,
+      landingSection: {
+        populate: 'media',
+      },
       product_types: {
         populate: {
           products: {

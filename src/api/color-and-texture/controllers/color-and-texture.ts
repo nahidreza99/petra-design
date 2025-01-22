@@ -13,7 +13,6 @@ export default factories.createCoreController('api::color-and-texture.color-and-
       landingSection: {
         populate: 'media',
       },
-      callToAction: true,
       meta_data: {
         populate: 'og_media',
       },

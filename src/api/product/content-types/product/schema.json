@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "Product",
+    "displayName": "03. Product",
     "description": ""
   },
   "options": {
@@ -17,11 +17,6 @@
       "type": "component",
       "repeatable": false,
       "component": "reusable.hero"
-    },
-    "callToAction": {
-      "type": "component",
-      "repeatable": false,
-      "component": "reusable.call-to-action"
     },
     "shape": {
       "displayName": "Shape",
@@ -87,11 +82,22 @@
         "Vintage"
       ]
     },
-    "projects": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::project.project",
-      "mappedBy": "products"
+    "blurbText": {
+      "type": "text"
+    },
+    "featured": {
+      "type": "boolean",
+      "default": false
+    },
+    "featuredThumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

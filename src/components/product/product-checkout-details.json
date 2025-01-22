@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_product_product_checkout_details",
+  "info": {
+    "displayName": "Product Checkout Details"
+  },
+  "options": {},
+  "attributes": {
+    "moreInformation": {
+      "type": "text"
+    }
+  }
+}

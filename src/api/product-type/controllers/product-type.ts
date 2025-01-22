@@ -13,7 +13,6 @@ export default factories.createCoreController('api::product-type.product-type', 
       landingSection: {
         populate: 'media',
       },
-      callToAction: true,
       resources: {
         populate: 'file',
       },

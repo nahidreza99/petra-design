@@ -4,7 +4,8 @@
   "info": {
     "singularName": "team-member",
     "pluralName": "team-members",
-    "displayName": "Team Member"
+    "displayName": "11. Team Member",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -25,14 +26,15 @@
       "type": "string"
     },
     "potrait": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "department": {
       "type": "string"

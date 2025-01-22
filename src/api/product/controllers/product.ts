@@ -13,7 +13,6 @@ export default factories.createCoreController('api::product.product', ({strapi})
       landingSection: {
         populate: 'media',
       },
-      callToAction: true,
       shape: {
         populate: {
           sizes: {

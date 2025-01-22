@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "faqs",
+  "collectionName": "project_types",
   "info": {
-    "singularName": "faq",
-    "pluralName": "faqs",
-    "displayName": "12. FAQ",
+    "singularName": "project-type",
+    "pluralName": "project-types",
+    "displayName": "Project Types",
     "description": ""
   },
   "options": {
@@ -12,11 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "question": {
+    "text": {
       "type": "string"
-    },
-    "answer": {
-      "type": "text"
     }
   }
 }

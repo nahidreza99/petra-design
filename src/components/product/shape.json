@@ -26,12 +26,6 @@
       "repeatable": true,
       "component": "product.dimension-with-size"
     },
-    "moreInformation": {
-      "type": "text"
-    },
-    "shownColorsMayVary": {
-      "type": "text"
-    },
     "colors": {
       "type": "component",
       "repeatable": true,

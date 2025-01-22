@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "faqs",
+  "collectionName": "resrouce_types",
   "info": {
-    "singularName": "faq",
-    "pluralName": "faqs",
-    "displayName": "12. FAQ",
+    "singularName": "resrouce-type",
+    "pluralName": "resrouce-types",
+    "displayName": "14. Resrouce Type",
     "description": ""
   },
   "options": {
@@ -12,11 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "question": {
+    "text": {
       "type": "string"
-    },
-    "answer": {
-      "type": "text"
     }
   }
 }

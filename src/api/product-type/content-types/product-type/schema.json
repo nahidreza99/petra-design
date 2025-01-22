@@ -4,7 +4,7 @@
   "info": {
     "singularName": "product-type",
     "pluralName": "product-types",
-    "displayName": "Product Type",
+    "displayName": "02. Product Type",
     "description": ""
   },
   "options": {
@@ -14,12 +14,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "callToAction": {
-      "displayName": "Call To Action",
-      "type": "component",
-      "repeatable": false,
-      "component": "reusable.call-to-action"
     },
     "product_category": {
       "type": "relation",
@@ -52,6 +46,18 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::project.project",
+      "mappedBy": "product_types"
+    },
+    "blurbText": {
+      "type": "text"
+    },
+    "productDescription": {
+      "type": "text"
     }
   }
 }

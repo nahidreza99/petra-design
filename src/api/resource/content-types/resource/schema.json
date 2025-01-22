@@ -4,7 +4,7 @@
   "info": {
     "singularName": "resource",
     "pluralName": "resources",
-    "displayName": "Resource",
+    "displayName": "04. Resource",
     "description": ""
   },
   "options": {
@@ -14,14 +14,6 @@
   "attributes": {
     "title": {
       "type": "string"
-    },
-    "resourceType": {
-      "type": "enumeration",
-      "enum": [
-        "Brochure",
-        "SketchUP",
-        "CAD"
-      ]
     },
     "file": {
       "type": "media",
@@ -44,6 +36,15 @@
       "type": "component",
       "repeatable": false,
       "component": "reusable.meta-fields"
+    },
+    "resourceType": {
+      "type": "enumeration",
+      "enum": [
+        "CAD",
+        "SketchUp",
+        "Brochure",
+        "Others"
+      ]
     }
   }
 }
