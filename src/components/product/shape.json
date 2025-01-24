@@ -30,6 +30,9 @@
       "type": "component",
       "repeatable": true,
       "component": "reusable.color"
+    },
+    "shownColorsMayVary": {
+      "type": "text"
     }
   }
 }
