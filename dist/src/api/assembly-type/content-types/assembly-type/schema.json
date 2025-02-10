@@ -1,0 +1,26 @@
+{
+    "kind": "collectionType",
+    "collectionName": "assembly_types",
+    "info": {
+        "singularName": "assembly-type",
+        "pluralName": "assembly-types",
+        "displayName": "07. Assembly Type",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "type": {
+            "type": "string",
+            "required": true
+        },
+        "items": {
+            "displayName": "Assembly Concept",
+            "type": "component",
+            "repeatable": true,
+            "component": "assembly.assembly-concept"
+        }
+    }
+}

@@ -1,0 +1,104 @@
+{
+    "kind": "collectionType",
+    "collectionName": "products",
+    "info": {
+        "singularName": "product",
+        "pluralName": "products",
+        "displayName": "03. Product",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "landingSection": {
+            "displayName": "Hero",
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "shape": {
+            "displayName": "Shape",
+            "type": "component",
+            "repeatable": false,
+            "component": "product.shape"
+        },
+        "resourceGroup": {
+            "displayName": "Resources",
+            "type": "component",
+            "repeatable": false,
+            "component": "product.resources"
+        },
+        "product_type": {
+            "type": "relation",
+            "relation": "manyToOne",
+            "target": "api::product-type.product-type",
+            "inversedBy": "products"
+        },
+        "productCode": {
+            "type": "string",
+            "required": true,
+            "regex": "^[A-Z]+ - \\d+$"
+        },
+        "projection": {
+            "type": "string"
+        },
+        "species": {
+            "type": "string"
+        },
+        "useLocation": {
+            "type": "string"
+        },
+        "images": {
+            "displayName": "Images",
+            "type": "component",
+            "repeatable": false,
+            "component": "product.images"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "productCode"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        },
+        "designer": {
+            "type": "customField",
+            "options": {
+                "preset": "defaultHtml"
+            },
+            "customField": "plugin::ckeditor5.CKEditor"
+        },
+        "style": {
+            "type": "enumeration",
+            "enum": [
+                "Classical",
+                "New classical",
+                "Modern",
+                "Contemporary",
+                "Vintage"
+            ]
+        },
+        "blurbText": {
+            "type": "text"
+        },
+        "featured": {
+            "type": "boolean",
+            "default": false
+        },
+        "featuredThumbnail": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}

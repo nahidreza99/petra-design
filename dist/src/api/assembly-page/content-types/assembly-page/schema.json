@@ -1,0 +1,31 @@
+{
+    "kind": "singleType",
+    "collectionName": "assembly_pages",
+    "info": {
+        "singularName": "assembly-page",
+        "pluralName": "assembly-pages",
+        "displayName": "05. Assembly Page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "callToAction": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.call-to-action"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        }
+    }
+}

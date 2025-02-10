@@ -1,0 +1,90 @@
+{
+    "kind": "collectionType",
+    "collectionName": "projects",
+    "info": {
+        "singularName": "project",
+        "pluralName": "projects",
+        "displayName": "05. Project",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "featured": {
+            "type": "boolean"
+        },
+        "product_categories": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::product-category.product-category",
+            "mappedBy": "projects"
+        },
+        "location": {
+            "type": "string"
+        },
+        "owner": {
+            "type": "string"
+        },
+        "richtext": {
+            "type": "blocks"
+        },
+        "images": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        },
+        "thumbnail": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title"
+        },
+        "product_types": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::product-type.product-type",
+            "inversedBy": "projects"
+        },
+        "materials": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::material.material",
+            "inversedBy": "projects"
+        },
+        "projectType": {
+            "type": "enumeration",
+            "enum": [
+                "Residential",
+                "Commercial",
+                "Institutional",
+                "Religious",
+                "Others"
+            ]
+        }
+    }
+}

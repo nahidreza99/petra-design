@@ -1,0 +1,53 @@
+{
+    "kind": "collectionType",
+    "collectionName": "blogs",
+    "info": {
+        "singularName": "blog",
+        "pluralName": "blogs",
+        "displayName": "10. Blog",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "shortDescription": {
+            "type": "text"
+        },
+        "category": {
+            "type": "string"
+        },
+        "readDuration": {
+            "type": "integer"
+        },
+        "richtext": {
+            "type": "customField",
+            "options": {
+                "preset": "defaultHtml"
+            },
+            "customField": "plugin::ckeditor5.CKEditor"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "title",
+            "required": true
+        },
+        "author": {
+            "type": "string"
+        },
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        }
+    }
+}

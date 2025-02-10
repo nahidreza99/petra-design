@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_assembly_assembly_concepts",
+    "info": {
+        "displayName": "Assembly Concept"
+    },
+    "options": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "images": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": true
+        }
+    }
+}

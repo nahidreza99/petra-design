@@ -1,0 +1,19 @@
+{
+    "kind": "collectionType",
+    "collectionName": "resrouce_types",
+    "info": {
+        "singularName": "resrouce-type",
+        "pluralName": "resrouce-types",
+        "displayName": "14. Resrouce Type",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "text": {
+            "type": "string"
+        }
+    }
+}

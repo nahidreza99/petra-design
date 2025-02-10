@@ -1,0 +1,32 @@
+{
+    "kind": "singleType",
+    "collectionName": "color_and_textures",
+    "info": {
+        "singularName": "color-and-texture",
+        "pluralName": "color-and-textures",
+        "displayName": "03. Color & Texture Page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "submissionResponse": {
+            "type": "blocks"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": true,
+            "component": "reusable.meta-fields"
+        },
+        "blurbText": {
+            "type": "text"
+        }
+    }
+}

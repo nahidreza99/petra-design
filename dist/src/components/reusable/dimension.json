@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_reusable_dimensions",
+    "info": {
+        "displayName": "Dimension",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "width": {
+            "type": "decimal"
+        },
+        "height": {
+            "type": "decimal"
+        },
+        "thickness": {
+            "type": "decimal"
+        },
+        "depth": {
+            "type": "decimal"
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "kind": "singleType",
+    "collectionName": "resource_pages",
+    "info": {
+        "singularName": "resource-page",
+        "pluralName": "resource-pages",
+        "displayName": "04. Resources Page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        }
+    }
+}

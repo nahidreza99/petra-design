@@ -1,0 +1,53 @@
+{
+    "kind": "singleType",
+    "collectionName": "homepages",
+    "info": {
+        "singularName": "homepage",
+        "pluralName": "homepages",
+        "displayName": "01. Homepage",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "headline1": {
+            "type": "string"
+        },
+        "headline2": {
+            "type": "string"
+        },
+        "exploreNewProducts": {
+            "displayName": "New Products",
+            "type": "component",
+            "repeatable": false,
+            "component": "homepage.new-products"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        },
+        "headline3": {
+            "type": "string"
+        },
+        "productCategories": {
+            "displayName": "Product Categories",
+            "type": "component",
+            "repeatable": false,
+            "component": "homepage.product-categories"
+        },
+        "landingImages": {
+            "type": "media",
+            "multiple": true,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        }
+    }
+}

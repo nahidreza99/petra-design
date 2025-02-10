@@ -1,0 +1,34 @@
+{
+    "kind": "singleType",
+    "collectionName": "galleries",
+    "info": {
+        "singularName": "gallery",
+        "pluralName": "galleries",
+        "displayName": "02. Gallery Page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "projects": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::project.project"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        },
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "blurbText": {
+            "type": "text"
+        }
+    }
+}

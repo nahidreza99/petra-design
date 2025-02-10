@@ -1,0 +1,35 @@
+{
+    "kind": "singleType",
+    "collectionName": "team_pages",
+    "info": {
+        "singularName": "team-page",
+        "pluralName": "team-pages",
+        "displayName": "08. Team Page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "careerHeadline": {
+            "type": "string"
+        },
+        "careerDescription": {
+            "type": "text"
+        },
+        "careerUrl": {
+            "type": "string"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        }
+    }
+}

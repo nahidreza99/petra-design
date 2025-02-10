@@ -1,0 +1,44 @@
+{
+    "kind": "collectionType",
+    "collectionName": "textures",
+    "info": {
+        "singularName": "texture",
+        "pluralName": "textures",
+        "displayName": "09. Texture",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string"
+        },
+        "sampleCode": {
+            "type": "string"
+        },
+        "image": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "color": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.color"
+        },
+        "materials": {
+            "type": "relation",
+            "relation": "manyToMany",
+            "target": "api::material.material",
+            "mappedBy": "textures"
+        }
+    }
+}

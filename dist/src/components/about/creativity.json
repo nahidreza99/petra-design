@@ -1,0 +1,30 @@
+{
+    "collectionName": "components_about_creativities",
+    "info": {
+        "displayName": "creativity",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "media": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos"
+            ]
+        },
+        "title": {
+            "type": "string",
+            "required": true,
+            "default": "Creativity"
+        },
+        "description": {
+            "type": "text",
+            "required": true,
+            "default": "At Petra Design, our journey began with a simple yet profound vision: to transform architectural spaces through exceptional design and unparalleled craftsmanship."
+        }
+    }
+}

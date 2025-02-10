@@ -1,0 +1,22 @@
+{
+    "collectionName": "components_product_dimension_with_sizes",
+    "info": {
+        "displayName": "Dimension With Size"
+    },
+    "options": {},
+    "attributes": {
+        "sizeFamily": {
+            "type": "enumeration",
+            "enum": [
+                "Small",
+                "Medium",
+                "Large"
+            ]
+        },
+        "dimension": {
+            "type": "component",
+            "repeatable": true,
+            "component": "reusable.dimension"
+        }
+    }
+}

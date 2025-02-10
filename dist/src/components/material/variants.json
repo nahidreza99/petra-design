@@ -1,0 +1,25 @@
+{
+    "collectionName": "components_material_variants",
+    "info": {
+        "displayName": "Variants"
+    },
+    "options": {},
+    "attributes": {
+        "media": {
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ],
+            "type": "media",
+            "multiple": false
+        },
+        "label": {
+            "type": "string"
+        },
+        "material_code": {
+            "type": "string"
+        }
+    }
+}

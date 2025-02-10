@@ -1,0 +1,26 @@
+{
+    "kind": "singleType",
+    "collectionName": "all_blogs",
+    "info": {
+        "singularName": "all-blog",
+        "pluralName": "all-blogs",
+        "displayName": "06. All Blogs Page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "landingSection": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.hero"
+        },
+        "meta_data": {
+            "type": "component",
+            "repeatable": false,
+            "component": "reusable.meta-fields"
+        }
+    }
+}

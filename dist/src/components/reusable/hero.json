@@ -1,0 +1,27 @@
+{
+    "collectionName": "components_reusable_heroes",
+    "info": {
+        "displayName": "Hero",
+        "description": ""
+    },
+    "options": {},
+    "attributes": {
+        "media": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "headline": {
+            "type": "string"
+        },
+        "description": {
+            "type": "text"
+        }
+    }
+}

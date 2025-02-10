@@ -1,0 +1,15 @@
+{
+    "collectionName": "components_reusable_dual_tone_texts",
+    "info": {
+        "displayName": "dualToneText"
+    },
+    "options": {},
+    "attributes": {
+        "highlightedText": {
+            "type": "text"
+        },
+        "remainingText": {
+            "type": "text"
+        }
+    }
+}

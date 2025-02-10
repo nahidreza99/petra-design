@@ -1,0 +1,43 @@
+{
+    "kind": "collectionType",
+    "collectionName": "team_members",
+    "info": {
+        "singularName": "team-member",
+        "pluralName": "team-members",
+        "displayName": "11. Team Member",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "full_name": {
+            "type": "string"
+        },
+        "slug": {
+            "type": "uid",
+            "targetField": "full_name"
+        },
+        "position": {
+            "type": "string"
+        },
+        "role": {
+            "type": "string"
+        },
+        "potrait": {
+            "type": "media",
+            "multiple": false,
+            "required": false,
+            "allowedTypes": [
+                "images",
+                "files",
+                "videos",
+                "audios"
+            ]
+        },
+        "department": {
+            "type": "string"
+        }
+    }
+}

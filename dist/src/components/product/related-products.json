@@ -1,0 +1,14 @@
+{
+    "collectionName": "components_product_related_products",
+    "info": {
+        "displayName": "Related Products"
+    },
+    "options": {},
+    "attributes": {
+        "products": {
+            "type": "relation",
+            "relation": "oneToMany",
+            "target": "api::product.product"
+        }
+    }
+}

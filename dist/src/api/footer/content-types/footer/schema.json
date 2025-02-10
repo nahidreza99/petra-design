@@ -1,0 +1,31 @@
+{
+    "kind": "singleType",
+    "collectionName": "footers",
+    "info": {
+        "singularName": "footer",
+        "pluralName": "footers",
+        "displayName": "09. Footer",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "organization": {
+            "type": "component",
+            "repeatable": false,
+            "component": "footer.organization"
+        },
+        "linkGroups": {
+            "type": "component",
+            "repeatable": true,
+            "component": "footer.link-group"
+        },
+        "copyright": {
+            "type": "string",
+            "required": true,
+            "default": "© Copyright All rights reserved by Petra 2024"
+        }
+    }
+}
